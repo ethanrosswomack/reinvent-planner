@@ -1,0 +1,78 @@
+{
+  "server_info": {
+    "name": "reinvent-planner",
+    "version": "3.2.0",
+    "description": "MCP server for AWS re:Invent 2025 with personal management and iCal export",
+    "author": "Assistant",
+    "created": "2025-01-10",
+    "updated": "2025-01-10",
+    "status": "operational",
+    "kiro_connected": true
+  },
+  "data_sources": {
+    "catalog_api": "https://reinvent-planner.cloud/api/catalog",
+    "rss_feed": "https://reinvent-planner.cloud/api/feed/rss", 
+    "aws_agenda": "https://reinvent.awsevents.com/agenda/"
+  },
+  "database": {
+    "path": "reinvent_data.db",
+    "tables": ["sessions", "rss_items", "aws_events", "sync_log", "personal_events", "favorite_lists", "favorite_sessions"]
+  },
+  "cache_settings": {
+    "duration_minutes": 30,
+    "auto_sync": false
+  },
+  "tools": [
+    "search_sessions",
+    "get_session_details", 
+    "list_available_filters",
+    "get_schedule_by_day",
+    "get_rss_updates",
+    "sync_rss_feed",
+    "get_aws_events", 
+    "sync_aws_events",
+    "sync_all_data",
+    "get_sync_history",
+    "add_personal_event",
+    "get_personal_events",
+    "delete_personal_event",
+    "add_session_to_favorites",
+    "get_favorite_sessions",
+    "remove_session_from_favorites",
+    "create_favorite_list",
+    "export_schedule_to_ical"
+  ],
+  "statistics": {
+    "last_test": "2025-01-10",
+    "last_sync": "2025-01-10",
+    "sessions_count": 1868,
+    "rss_items_count": 107,
+    "aws_events_count": 140,
+    "venetian_sessions": 268,
+    "venetian_percentage": 14.3
+  },
+  "venetian_analysis": {
+    "total_sessions": 268,
+    "by_level": {
+      "100_foundational": 34,
+      "200_intermediate": 134,
+      "300_advanced": 89,
+      "400_expert": 11,
+      "500_distinguished": 0
+    },
+    "by_topic": {
+      "artificial_intelligence": 89,
+      "developer_tools": 31,
+      "business_applications": 28,
+      "migration_modernization": 25,
+      "security_identity": 22,
+      "analytics": 18,
+      "cloud_operations": 15,
+      "compute": 12,
+      "storage": 8,
+      "networking": 6,
+      "other": 14
+    },
+    "profile": "Technical hub for experienced practitioners"
+  }
+}
