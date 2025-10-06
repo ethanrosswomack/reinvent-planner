@@ -1,64 +1,64 @@
-# AWS re:Invent Planner MCP Server v3.0 - Résumé du projet
+# AWS re:Invent Planner MCP Server v3.0 - Project Summary
 
-## 🎯 Objectif
-Serveur MCP pour AWS re:Invent 2025 avec gestion personnelle et export iCal.
+## 🎯 Objective
+MCP server for AWS re:Invent 2025 with personal management and iCal export.
 
-## ✅ Fonctionnalités réalisées
+## ✅ Implemented Features
 
-### 📊 Données re:Invent (12 outils)
-- ✅ Recherche de sessions avec filtres avancés
-- ✅ Détails complets des sessions
-- ✅ Planning par jour et par lieu
-- ✅ Surveillance RSS des nouvelles sessions
-- ✅ Agenda officiel AWS (keynotes, expo, réceptions)
-- ✅ Synchronisation automatique de toutes les sources
-- ✅ Historique complet des mises à jour
+### 📊 re:Invent Data (12 tools)
+- ✅ Session search with advanced filters
+- ✅ Complete session details
+- ✅ Schedule by day and venue
+- ✅ RSS monitoring of new sessions
+- ✅ Official AWS agenda (keynotes, expo, receptions)
+- ✅ Automatic synchronization of all sources
+- ✅ Complete update history
 
-### 👤 Gestion personnelle (8 outils)
-- ✅ Événements personnels (réunions, repas, déplacements)
-- ✅ 4 listes de favoris (preselection, plan_a, plan_b, plan_c)
-- ✅ Listes personnalisées illimitées
-- ✅ Notes et priorités sur les sessions
-- ✅ Export iCal complet pour Outlook/Google Calendar/Apple Calendar
+### 👤 Personal Management (8 tools)
+- ✅ Personal events (meetings, meals, travel)
+- ✅ 4 favorite lists (preselection, plan_a, plan_b, plan_c)
+- ✅ Unlimited custom lists
+- ✅ Notes and priorities on sessions
+- ✅ Complete iCal export for Outlook/Google Calendar/Apple Calendar
 
 ### 🗄️ Infrastructure
-- ✅ Base SQLite avec 8 tables et historique complet
-- ✅ Cache intelligent pour les performances
-- ✅ Gestion d'erreurs robuste
-- ✅ Configuration MCP automatique pour Kiro
+- ✅ SQLite database with 8 tables and complete history
+- ✅ Smart cache for performance
+- ✅ Robust error handling
+- ✅ Automatic MCP configuration for Kiro
 
-## 📊 Statistiques finales
+## 📊 Final Statistics
 
 ### Code
-- **1 fichier principal** : `server.py` (2000+ lignes)
-- **18 outils MCP** : Tous fonctionnels et testés
-- **7 tables SQLite** : Structure complète avec relations
-- **3 sources de données** : API, RSS, agenda AWS
+- **1 main file**: `server.py` (2000+ lines)
+- **18 MCP tools**: All functional and tested
+- **7 SQLite tables**: Complete structure with relationships
+- **3 data sources**: API, RSS, AWS agenda
 
 ### Tests
-- **12 tests** : 8 unitaires + 4 intégration
-- **100% des tests unitaires** passent ✅
-- **Couverture complète** des fonctionnalités principales
-- **Tests d'intégration** avec APIs externes
+- **12 tests**: 8 unit + 4 integration
+- **100% unit tests** pass ✅
+- **Complete coverage** of main functionality
+- **Integration tests** with external APIs
 
 ### Documentation
-- **README.md** : Documentation principale complète
-- **35 exemples** d'utilisation dans `docs/examples.md`
-- **Changelog** détaillé des versions
-- **Makefile** avec commandes de développement
+- **README.md**: Complete main documentation
+- **35 usage examples** in `docs/examples.md`
+- **Detailed changelog** of versions
+- **Makefile** with development commands
 
-### Données traitées (dernière synchronisation)
-- **1868 sessions** re:Invent récupérées et stockées (+14 nouvelles)
-- **107 mises à jour RSS** synchronisées
-- **140 événements AWS** officiels traités
+### Processed Data (last synchronization)
+- **1868 re:Invent sessions** retrieved and stored (+14 new)
+- **107 RSS updates** synchronized
+- **140 official AWS events** processed
 
-### Analyses disponibles
-- **268 sessions au Venetian** (14.3% du total)
-- **Répartition par niveau** : 50% Intermediate, 33% Advanced, 13% Foundational, 4% Expert
-- **Répartition par sujet** : 33% IA, 12% Developer Tools, 10% Business Apps
-- **Hub technique** : Le Venetian est le lieu principal pour les sessions techniques
+### Available Analytics
+- **268 sessions at Venetian** (14.3% of total)
+- **Distribution by level**: 50% Intermediate, 33% Advanced, 13% Foundational, 4% Expert
+- **Distribution by topic**: 33% AI, 12% Developer Tools, 10% Business Apps
+- **Technical hub**: Venetian is the main venue for technical sessions
 
-## 🚀 Utilisation
+## 🚀 Usage
 
 ### Installation
 ```bash
@@ -67,27 +67,27 @@ Serveur MCP pour AWS re:Invent 2025 avec gestion personnelle et export iCal.
 
 ### Tests
 ```bash
-make test                # Tests unitaires
-make test-integration    # Tests avec APIs
+make test                # Unit tests
+make test-integration    # Tests with APIs
 ```
 
-### Utilisation dans Kiro
-Le serveur est automatiquement configuré et prêt à utiliser avec 20 outils MCP.
+### Usage in Kiro
+The server is automatically configured and ready to use with 20 MCP tools.
 
-## 🎉 Résultat
+## 🎉 Result
 
-**Serveur MCP production-ready** pour AWS re:Invent 2025 avec :
-- Gestion complète des sessions et événements
-- Fonctionnalités personnelles avancées
-- Export iCal pour intégration calendrier
-- Tests complets et documentation exhaustive
-- Structure de projet professionnelle avec Git
+**Production-ready MCP server** for AWS re:Invent 2025 with:
+- Complete session and event management
+- Advanced personal features
+- iCal export for calendar integration
+- Complete tests and comprehensive documentation
+- Professional project structure with Git
 
-**Status : ✅ TERMINÉ, OPÉRATIONNEL ET CONNECTÉ À KIRO**
+**Status: ✅ COMPLETED, OPERATIONAL AND CONNECTED TO KIRO**
 
-### 🎯 Dernières validations
-- ✅ Serveur MCP connecté à Kiro sans erreur
-- ✅ 18 outils MCP fonctionnels et testés
-- ✅ Analyses en temps réel des données re:Invent
-- ✅ Export iCal vers Outlook validé
-- ✅ Base SQLite avec 1868+ sessions stockées
+### 🎯 Final Validations
+- ✅ MCP server connected to Kiro without errors
+- ✅ 20 functional and tested MCP tools
+- ✅ Real-time analysis of re:Invent data
+- ✅ iCal export to Outlook validated
+- ✅ SQLite database with 1868+ stored sessions

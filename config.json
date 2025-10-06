@@ -2,7 +2,7 @@
   "server_info": {
     "name": "reinvent-planner",
     "version": "3.2.0",
-    "description": "Serveur MCP pour AWS re:Invent 2025 avec gestion personnelle et export iCal",
+    "description": "MCP server for AWS re:Invent 2025 with personal management and iCal export",
     "author": "Assistant",
     "created": "2025-01-10",
     "updated": "2025-01-10",
